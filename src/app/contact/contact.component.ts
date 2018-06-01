@@ -51,6 +51,7 @@ $.ajax({
     } else {
         $(formMessages).text('Oops! An error occured and your message could not be sent.');
     }
+  console.log('prueba')
 });
 });
 });
