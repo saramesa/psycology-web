@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component( {
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
+  styleUrls: [ './app.component.css' ]
+} )
 export class AppComponent {
-  title = 'app';
+  home = 'Home';
+  whoAmI = 'Quién soy';
+  contact = 'Contacto';
+  service = 'Servicios';
+  methodology = 'Metología';
+  fullImagePath: string;
+
+  constructor() {
+    this.fullImagePath = '/assets/images/playstonessmall.jpg'
+  }
 }
